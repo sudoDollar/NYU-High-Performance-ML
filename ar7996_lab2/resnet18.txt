@@ -1,0 +1,119 @@
+Resnet18(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): ReLU()
+  )
+  (layer1): ResidualLayer(
+    (layer): Sequential(
+      (0): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential()
+        (relu): ReLU()
+      )
+      (1): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential()
+        (relu): ReLU()
+      )
+    )
+  )
+  (layer2): ResidualLayer(
+    (layer): Sequential(
+      (0): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        )
+        (relu): ReLU()
+      )
+      (1): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential()
+        (relu): ReLU()
+      )
+    )
+  )
+  (layer3): ResidualLayer(
+    (layer): Sequential(
+      (0): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        )
+        (relu): ReLU()
+      )
+      (1): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential()
+        (relu): ReLU()
+      )
+    )
+  )
+  (layer4): ResidualLayer(
+    (layer): Sequential(
+      (0): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        )
+        (relu): ReLU()
+      )
+      (1): ResidualBlock(
+        (conv1): Sequential(
+          (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (1): ReLU()
+        )
+        (conv2): Sequential(
+          (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        )
+        (skip): Sequential()
+        (relu): ReLU()
+      )
+    )
+  )
+  (avg_pool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+<class '__main__.Resnet18'>

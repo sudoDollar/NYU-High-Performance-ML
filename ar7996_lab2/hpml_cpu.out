@@ -1,0 +1,137 @@
+Files already downloaded and verified
+Files already downloaded and verified
+
+C2: Data loading time, Training Time, Running Time
+##################################################
+
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cpu
+
+Epoch: 1/5 Training loss: 1.9029017772211139  Training acc: 0.30729299875171595
+Data Loading Time: 0.5640538521111012 secs  Training time: 217.4487524665892 secs  Total Running Time: 218.18879755958915 secs
+
+Epoch: 2/5 Training loss: 1.4780132419922773  Training acc: 0.4559782608543211
+Data Loading Time: 0.609431117773056 secs  Training time: 215.38720513880253 secs  Total Running Time: 216.21747229248285 secs
+
+Epoch: 3/5 Training loss: 1.2495761716457279  Training acc: 0.5485693733862904
+Data Loading Time: 0.6301647052168846 secs  Training time: 209.70884777978063 secs  Total Running Time: 210.55391976609826 secs
+
+Epoch: 4/5 Training loss: 1.0480180138822102  Training acc: 0.6254076087261404
+Data Loading Time: 0.6413500532507896 secs  Training time: 209.04028104245663 secs  Total Running Time: 209.92135556414723 secs
+
+Epoch: 5/5 Training loss: 0.8970319901585884  Training acc: 0.683843510230179
+Data Loading Time: 0.5778227187693119 secs  Training time: 209.88264348357916 secs  Total Running Time: 210.70187001302838 secs
+
+
+C3: I/O Optimization
+####################
+
+Starting Training: 
+Optimizer: sgd, num_workers: 0, Device: cpu
+
+Epoch: 1/5 Training loss: 1.8525985012883726  Training acc: 0.33268462277739247
+Data Loading Time: 22.414943039417267 secs  Training time: 153.60258040949702 secs  Total Running Time: 176.0284940712154 secs
+
+Epoch: 2/5 Training loss: 1.4043902494108584  Training acc: 0.48666080565708675
+Data Loading Time: 22.119559433311224 secs  Training time: 152.88092344254255 secs  Total Running Time: 175.01146809384227 secs
+
+Epoch: 3/5 Training loss: 1.1168119495786974  Training acc: 0.599832161155808
+Data Loading Time: 22.13121673837304 secs  Training time: 154.36598644405603 secs  Total Running Time: 176.5082176849246 secs
+
+Epoch: 4/5 Training loss: 0.9128925393304557  Training acc: 0.6792439258921786
+Data Loading Time: 22.027448277920485 secs  Training time: 152.85012314468622 secs  Total Running Time: 174.8885446935892 secs
+
+Epoch: 5/5 Training loss: 0.7532982948186148  Training acc: 0.7397977941481354
+Data Loading Time: 21.88607334345579 secs  Training time: 153.55752160027623 secs  Total Running Time: 175.4546855352819 secs
+
+Total Data Time:  110.57924083247781 
+
+Starting Training: 
+Optimizer: sgd, num_workers: 4, Device: cpu
+
+Epoch: 1/5 Training loss: 1.8975548292974682  Training acc: 0.31970907926864334
+Data Loading Time: 0.768080648034811 secs  Training time: 191.03827162459493 secs  Total Running Time: 192.05650824680924 secs
+
+Epoch: 2/5 Training loss: 1.396696882479636  Training acc: 0.48676470585186465
+Data Loading Time: 0.7860049046576023 secs  Training time: 196.04519468545914 secs  Total Running Time: 197.08659230917692 secs
+
+Epoch: 3/5 Training loss: 1.1132528533411148  Training acc: 0.601442615089514
+Data Loading Time: 0.7757135629653931 secs  Training time: 199.42529553547502 secs  Total Running Time: 200.4565318673849 secs
+
+Epoch: 4/5 Training loss: 0.9444558868932602  Training acc: 0.6667399296675192
+Data Loading Time: 0.7496965080499649 secs  Training time: 197.6635012999177 secs  Total Running Time: 198.66480937227607 secs
+
+Epoch: 5/5 Training loss: 0.7913228290922502  Training acc: 0.7238531010535062
+Data Loading Time: 0.8188465982675552 secs  Training time: 201.37172923609614 secs  Total Running Time: 202.47222060337663 secs
+
+Total Data Time:  3.8983422219753265 
+
+Starting Training: 
+Optimizer: sgd, num_workers: 8, Device: cpu
+
+Epoch: 1/5 Training loss: 1.7512559942577197  Training acc: 0.35454363812266104
+Data Loading Time: 0.9358806014060974 secs  Training time: 206.02354089543223 secs  Total Running Time: 207.24872808903456 secs
+
+Epoch: 2/5 Training loss: 1.26962048516554  Training acc: 0.5378756393557009
+Data Loading Time: 0.9542953409254551 secs  Training time: 202.89736856892705 secs  Total Running Time: 204.13467356190085 secs
+
+Epoch: 3/5 Training loss: 0.9904586747479256  Training acc: 0.6449888107721763
+Data Loading Time: 0.9248357340693474 secs  Training time: 209.50012677907944 secs  Total Running Time: 210.66975026205182 secs
+
+Epoch: 4/5 Training loss: 0.8345670855563619  Training acc: 0.7075967072221019
+Data Loading Time: 0.9808571524918079 secs  Training time: 203.39025722071528 secs  Total Running Time: 204.6233514994383 secs
+
+Epoch: 5/5 Training loss: 0.7045576794982871  Training acc: 0.755470748142818
+Data Loading Time: 1.0333674885332584 secs  Training time: 204.97901548445225 secs  Total Running Time: 206.3000704087317 secs
+
+Total Data Time:  4.829236317425966 
+
+Optimal Num Workers:  4
+
+C4: Profiling with Optimal Number of Workers
+############################################
+
+Starting Training: 
+Optimizer: sgd, num_workers: 1, Device: cpu
+
+Epoch: 1/5 Training loss: 1.9128339068054239  Training acc: 0.3121363490896152
+Data Loading Time: 0.5878500938415527 secs  Training time: 209.2281000725925 secs  Total Running Time: 210.0750115700066 secs
+
+Epoch: 2/5 Training loss: 1.4211775064468384  Training acc: 0.4763586956369298
+Data Loading Time: 0.6035667806863785 secs  Training time: 207.38471018895507 secs  Total Running Time: 208.24330119416118 secs
+
+Epoch: 3/5 Training loss: 1.147469676211667  Training acc: 0.5882672633966217
+Data Loading Time: 0.6225427910685539 secs  Training time: 204.9850198365748 secs  Total Running Time: 205.88035995140672 secs
+
+Epoch: 4/5 Training loss: 0.9615332682419311  Training acc: 0.6590353261174449
+Data Loading Time: 0.6046921722590923 secs  Training time: 224.45716959238052 secs  Total Running Time: 225.32466017827392 secs
+
+Epoch: 5/5 Training loss: 0.8384641811365972  Training acc: 0.7045476342101231
+Data Loading Time: 0.6232650205492973 secs  Training time: 228.35892732441425 secs  Total Running Time: 229.23477073386312 secs
+
+Total Data Loading time using 1 workers: 3.041916858404875
+Total Computing time using 1 workers: 1074.4139270149171
+
+Starting Training: 
+Optimizer: sgd, num_workers: 4, Device: cpu
+
+Epoch: 1/5 Training loss: 1.8160310773288502  Training acc: 0.33982177113023254
+Data Loading Time: 0.8074525482952595 secs  Training time: 255.35892250016332 secs  Total Running Time: 256.4341479130089 secs
+
+Epoch: 2/5 Training loss: 1.3814747647556198  Training acc: 0.49710278132992325
+Data Loading Time: 0.736790344119072 secs  Training time: 244.61520306766033 secs  Total Running Time: 245.61558236926794 secs
+
+Epoch: 3/5 Training loss: 1.1015558550729776  Training acc: 0.6045796035805626
+Data Loading Time: 0.7302599176764488 secs  Training time: 286.5774823985994 secs  Total Running Time: 287.56020929664373 secs
+
+Epoch: 4/5 Training loss: 0.9317625050654497  Training acc: 0.668414322311616
+Data Loading Time: 0.8098947331309319 secs  Training time: 248.0125018581748 secs  Total Running Time: 249.04549032449722 secs
+
+Epoch: 5/5 Training loss: 0.7852383339801408  Training acc: 0.72407688615877
+Data Loading Time: 0.7185813188552856 secs  Training time: 265.9628046192229 secs  Total Running Time: 266.9413211643696 secs
+
+Total Data Loading time using 4 workers: 3.8029788620769978
+Total Computing time using 4 workers: 1300.5269144438207
+
+Graphs comparing Data Loading time and Computing Time has been saved.
+
