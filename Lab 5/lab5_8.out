@@ -1,0 +1,386 @@
+Files already downloaded and verified
+Files already downloaded and verified
+32
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 32
+Number of Batches: 1563
+
+Epoch: 1/2 Training loss: 2.0175467885158342  Training acc: 0.2612763915547025
+Training time: 27.97613517846912 secs, Running time: 29.471486288122833 secs
+
+Epoch: 2/2 Training loss: 1.5431389588998512  Training acc: 0.4297424824056302
+Training time: 23.013953601941466 secs, Running time: 24.228280467912555 secs
+
+128
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 128
+Number of Batches: 391
+
+Epoch: 1/2 Training loss: 1.9249104791894898  Training acc: 0.3049232737182656
+Training time: 17.16883047344163 secs, Running time: 17.732115819118917 secs
+
+Epoch: 2/2 Training loss: 1.4594765584487135  Training acc: 0.462380115180979
+Training time: 17.198095166124403 secs, Running time: 17.75567920366302 secs
+
+512
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 512
+Number of Batches: 98
+
+Epoch: 1/2 Training loss: 2.3115451603519674  Training acc: 0.24867513988699233
+Training time: 18.438497439026833 secs, Running time: 18.950104907155037 secs
+
+Epoch: 2/2 Training loss: 1.5762181123908685  Training acc: 0.40816990879117226
+Training time: 18.245301387272775 secs, Running time: 18.740456683095545 secs
+
+2048
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 2048
+Number of Batches: 25
+
+Epoch: 1/2 Training loss: 2.5539940214157104  Training acc: 0.18927513241767882
+Training time: 18.89479094557464 secs, Running time: 20.12802526820451 secs
+
+Epoch: 2/2 Training loss: 1.7946006870269775  Training acc: 0.3174086081981659
+Training time: 18.884235872421414 secs, Running time: 20.11371350288391 secs
+
+8192
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 8192
+Number of Batches: 7
+
+Epoch: 1/2 Training loss: 3.551929371697562  Training acc: 0.1520545333623886
+Training time: 20.00681161088869 secs, Running time: 24.484018937684596 secs
+
+Epoch: 2/2 Training loss: 6.8660776274544855  Training acc: 0.11761458218097687
+Training time: 18.082406002562493 secs, Running time: 22.550100171007216 secs
+
+32768
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 32768
+Number of Batches: 2
+
+CUDA out of memory error occurred. Please reduce batch size
+
+32
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 2, Batch Size per GPU: 32
+Number of Batches: 782
+
+Epoch: 1/2, Training loss: 1.8295967338030295, Training acc: 0.32836476982097185
+Training time: 33.823662707582116 secs, Running time: 34.77182626677677 secs
+
+Epoch: 2/2, Training loss: 1.3526045950629828, Training acc: 0.5085118286445013
+Training time: 32.716425714083016 secs, Running time: 33.587694101035595 secs
+
+128
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 2, Batch Size per GPU: 128
+Number of Batches: 196
+
+Epoch: 1/2, Training loss: 2.010007850977839, Training acc: 0.2965282206328548
+Training time: 12.218033397104591 secs, Running time: 13.051314136013389 secs
+
+Epoch: 2/2, Training loss: 1.4800421577327105, Training acc: 0.4553810586126483
+Training time: 12.258761940523982 secs, Running time: 13.013996748253703 secs
+
+512
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 2, Batch Size per GPU: 512
+Number of Batches: 49
+
+Epoch: 1/2, Training loss: 2.1369493469900016, Training acc: 0.2580663233387227
+Training time: 9.695403691846877 secs, Running time: 11.639937965199351 secs
+
+Epoch: 2/2, Training loss: 1.5343376057488578, Training acc: 0.4294701522710372
+Training time: 9.796424930915236 secs, Running time: 13.203171778004616 secs
+
+2048
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 2, Batch Size per GPU: 2048
+Number of Batches: 13
+
+Epoch: 1/2, Training loss: 3.433179947046133, Training acc: 0.14598723558279184
+Training time: 9.682203471194953 secs, Running time: 13.750697302166373 secs
+
+Epoch: 2/2, Training loss: 2.474662652382484, Training acc: 0.1815240474847647
+Training time: 9.676747837569565 secs, Running time: 13.949796438682824 secs
+
+8192
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 2, Batch Size per GPU: 8192
+Number of Batches: 4
+
+Epoch: 1/2, Training loss: 2.7647864818573, Training acc: 0.15271629393100739
+Training time: 10.27661409880966 secs, Running time: 18.47438281401992 secs
+
+Epoch: 2/2, Training loss: 5.006461918354034, Training acc: 0.15986201539635658
+Training time: 9.653193855658174 secs, Running time: 20.737054315861315 secs
+
+32768
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 2, Batch Size per GPU: 32768
+Number of Batches: 1
+
+CUDA out of memory error occurred. Please reduce batch size
+
+32
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 32
+Number of Batches: 391
+
+Epoch: 1/2, Training loss: 2.141813447713242, Training acc: 0.252973145764807
+Training time: 19.706773459445685 secs, Running time: 20.393656252883375 secs
+
+Epoch: 2/2, Training loss: 1.5805649736043437, Training acc: 0.41339114453176706
+Training time: 18.884890865068883 secs, Running time: 19.55294255586341 secs
+
+128
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 128
+Number of Batches: 98
+
+Epoch: 1/2, Training loss: 2.20260419042743, Training acc: 0.26048594652389995
+Training time: 6.863265634514391 secs, Running time: 13.196325983386487 secs
+
+Epoch: 2/2, Training loss: 1.6073733215429344, Training acc: 0.4033279047936809
+Training time: 6.788041316438466 secs, Running time: 13.07991361618042 secs
+
+512
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 512
+Number of Batches: 25
+
+Epoch: 1/2, Training loss: 4.077630519866943, Training acc: 0.14703604102134704
+Training time: 5.000149618368596 secs, Running time: 13.468037204351276 secs
+
+Epoch: 2/2, Training loss: 2.1286571979522706, Training acc: 0.22661925077438355
+Training time: 5.0603311737068 secs, Running time: 13.30563801387325 secs
+
+2048
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 2048
+Number of Batches: 7
+
+Epoch: 1/2, Training loss: 3.689638819013323, Training acc: 0.15070122906139918
+Training time: 5.009184435009956 secs, Running time: 14.746065333951265 secs
+
+Epoch: 2/2, Training loss: 4.572005782808576, Training acc: 0.12076833950621742
+Training time: 4.98588700639084 secs, Running time: 14.82708592619747 secs
+
+8192
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 8192
+Number of Batches: 2
+
+Epoch: 1/2, Training loss: 2.508845090866089, Training acc: 0.12853766977787018
+Training time: 6.06251502269879 secs, Running time: 21.453358646016568 secs
+
+Epoch: 2/2, Training loss: 2.935038208961487, Training acc: 0.17097437381744385
+Training time: 4.896082185674459 secs, Running time: 22.74536427622661 secs
+
+32768
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 32768
+Number of Batches: 1
+
+CUDA out of memory error occurred. Please reduce batch size
+
+Batch Size per GPU: 32
+
+Training Time for 1 GPU: 23.013953601941466
+
+Training Time for 2 GPUs: 32.716425714083016
+SpeedUp of 2 GPU over 1: 0.721343965889148
+
+Training Time for 4 GPUs: 18.884890865068883
+SpeedUp of 4 GPU over 1: 1.2391117295359277
+
+
+Batch Size per GPU: 128
+
+Training Time for 1 GPU: 17.198095166124403
+
+Training Time for 2 GPUs: 12.258761940523982
+SpeedUp of 2 GPU over 1: 1.3643525157669634
+
+Training Time for 4 GPUs: 6.788041316438466
+SpeedUp of 4 GPU over 1: 1.3574767941661692
+
+
+Batch Size per GPU: 512
+
+Training Time for 1 GPU: 18.245301387272775
+
+Training Time for 2 GPUs: 9.796424930915236
+SpeedUp of 2 GPU over 1: 1.4193905069322497
+
+Training Time for 4 GPUs: 5.0603311737068
+SpeedUp of 4 GPU over 1: 1.4084598321069333
+
+
+Batch Size per GPU: 2048
+
+Training Time for 1 GPU: 18.884235872421414
+
+Training Time for 2 GPUs: 9.676747837569565
+SpeedUp of 2 GPU over 1: 1.4418643018408877
+
+Training Time for 4 GPUs: 4.98588700639084
+SpeedUp of 4 GPU over 1: 1.356552029373869
+
+
+Batch Size per GPU: 8192
+
+Training Time for 1 GPU: 18.082406002562493
+
+Training Time for 2 GPUs: 9.653193855658174
+SpeedUp of 2 GPU over 1: 1.08743025058092
+
+Training Time for 4 GPUs: 4.896082185674459
+SpeedUp of 4 GPU over 1: 0.991415213102413
+
+
+Batch Size per GPU: 32
+
+Compute Time for 2 GPUs: 11.506976800970735
+Communication Time for 2 GPUs: 21.209448913112283
+
+Compute Time for 4 GPUs: 5.7534884004853675
+Communication Time for 4 GPUs: 13.131402464583516
+
+
+Batch Size per GPU: 128
+
+Compute Time for 2 GPUs: 8.599047583062202
+Communication Time for 2 GPUs: 3.6597143574617803
+
+Compute Time for 4 GPUs: 4.299523791531101
+Communication Time for 4 GPUs: 2.4885175249073654
+
+
+Batch Size per GPU: 512
+
+Compute Time for 2 GPUs: 9.122650693636388
+Communication Time for 2 GPUs: 0.6737742372788489
+
+Compute Time for 4 GPUs: 4.561325346818194
+Communication Time for 4 GPUs: 0.49900582688860595
+
+
+Batch Size per GPU: 2048
+
+Compute Time for 2 GPUs: 9.442117936210707
+Communication Time for 2 GPUs: 0.23462990135885775
+
+Compute Time for 4 GPUs: 4.721058968105353
+Communication Time for 4 GPUs: 0.2648280382854864
+
+
+Batch Size per GPU: 8192
+
+Compute Time for 2 GPUs: 9.041203001281248
+Communication Time for 2 GPUs: 0.6119908543769252
+
+Compute Time for 4 GPUs: 4.520601500640623
+Communication Time for 4 GPUs: 0.37548068503383547
+
+
+Batch Size per GPU: 32
+Time for AllReduce in 2 GPUs setup: 21.209448913112283 secs
+Bandwidth Utilization in 2 GPUs setup: 3.2959039416051574 GB/s
+
+Time for AllReduce in 4 GPUs setup: 13.131402464583516 secs
+Bandwidth Utilization in 4 GPUs setup: 7.985168354317568 GB/s
+
+
+Batch Size per GPU: 128
+Time for AllReduce in 2 GPUs setup: 3.6597143574617803 secs
+Bandwidth Utilization in 2 GPUs setup: 4.7874699237870715 GB/s
+
+Time for AllReduce in 4 GPUs setup: 2.4885175249073654 secs
+Bandwidth Utilization in 4 GPUs setup: 10.560969879036039 GB/s
+
+
+Batch Size per GPU: 512
+Time for AllReduce in 2 GPUs setup: 0.6737742372788489 secs
+Bandwidth Utilization in 2 GPUs setup: 6.500980390241915 GB/s
+
+Time for AllReduce in 4 GPUs setup: 0.49900582688860595 secs
+Bandwidth Utilization in 4 GPUs setup: 13.435468763567426 GB/s
+
+
+Batch Size per GPU: 2048
+Time for AllReduce in 2 GPUs setup: 0.23462990135885775 secs
+Bandwidth Utilization in 2 GPUs setup: 4.952872763743029 GB/s
+
+Time for AllReduce in 4 GPUs setup: 0.2648280382854864 secs
+Bandwidth Utilization in 4 GPUs setup: 7.088470043252514 GB/s
+
+
+Batch Size per GPU: 8192
+Time for AllReduce in 2 GPUs setup: 0.6119908543769252 secs
+Bandwidth Utilization in 2 GPUs setup: 0.5842681821839361 GB/s
+
+Time for AllReduce in 4 GPUs setup: 0.37548068503383547 secs
+Bandwidth Utilization in 4 GPUs setup: 1.4284361283501659 GB/s
+
+
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 1, Batch Size per GPU: 128
+Number of Batches: 391
+
+Epoch: 1/5 Training loss: 1.9389005881136336  Training acc: 0.3012867646906382
+Training time: 17.12094509927556 secs, Running time: 17.78772635292262 secs
+
+Epoch: 2/5 Training loss: 1.4752989943375063  Training acc: 0.4565137467725807
+Training time: 17.15932972030714 secs, Running time: 17.821216471958905 secs
+
+Epoch: 3/5 Training loss: 1.2164347025439561  Training acc: 0.560701726342711
+Training time: 17.20827666623518 secs, Running time: 17.829884457867593 secs
+
+Epoch: 4/5 Training loss: 1.0209311565474781  Training acc: 0.6366847826696723
+Training time: 17.18793923454359 secs, Running time: 17.7523330450058 secs
+
+Epoch: 5/5 Training loss: 0.8889151154576665  Training acc: 0.6860174233346339
+Training time: 17.187113458756357 secs, Running time: 17.76101703196764 secs
+
+Starting Training: 
+Optimizer: sgd, num_workers: 2, Device: cuda
+Number of Devices: 4, Batch Size per GPU: 8192
+Number of Batches: 2
+
+Epoch: 1/5, Training loss: 2.488710880279541, Training acc: 0.1285962387919426
+Training time: 4.978144766297191 secs, Running time: 20.392490597907454 secs
+
+Epoch: 2/5, Training loss: 3.017281651496887, Training acc: 0.16973097622394562
+Training time: 4.742575714830309 secs, Running time: 20.212261531036347 secs
+
+Epoch: 3/5, Training loss: 4.1747671365737915, Training acc: 0.13912992179393768
+Training time: 4.756890162825584 secs, Running time: 22.476627413649112 secs
+
+Epoch: 4/5, Training loss: 5.033499717712402, Training acc: 0.19554468244314194
+Training time: 4.752106748986989 secs, Running time: 20.291102532763034 secs
+
+Epoch: 5/5, Training loss: 4.432891249656677, Training acc: 0.10917582735419273
+Training time: 4.738258120138198 secs, Running time: 22.63015639036894 secs
+
