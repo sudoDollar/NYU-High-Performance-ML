@@ -1,0 +1,138 @@
+rm -f q2 q3 *.txt *.png
+/share/apps/cuda/11.3.1/bin/nvcc q2.cu -o q2 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 -O3 
+/share/apps/cuda/11.3.1/bin/nvcc q3.cu -o q3 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 -O3 
+Running Q1 program with K=1, numBlock=1, numThread=1
+Number of Elements: 1000000
+Time Elapsed (CPU): 0.00558615 secs
+Running Q1 program with K=5, numBlock=1, numThread=1
+Number of Elements: 5000000
+Time Elapsed (CPU): 0.020762 secs
+Running Q1 program with K=10, numBlock=1, numThread=1
+Number of Elements: 10000000
+Time Elapsed (CPU): 0.0404131 secs
+Running Q1 program with K=50, numBlock=1, numThread=1
+Number of Elements: 50000000
+Time Elapsed (CPU): 0.20291 secs
+Running Q1 program with K=100, numBlock=1, numThread=1
+Number of Elements: 100000000
+Time Elapsed (CPU): 0.408763 secs
+Running Q2 with K=1, numBlock=1, numThread=1
+Number of Elements: 1
+Time Elapsed (GPU): 0.0745721 secs
+Max error: 1
+Running Q2 with K=5, numBlock=1, numThread=1
+Number of Elements: 5
+Time Elapsed (GPU): 0.289676 secs
+Max error: 1
+Running Q2 with K=10, numBlock=1, numThread=1
+Number of Elements: 10
+Time Elapsed (GPU): 0.579509 secs
+Max error: 1
+Running Q2 with K=50, numBlock=1, numThread=1
+Number of Elements: 50
+Time Elapsed (GPU): 2.90074 secs
+Max error: 1
+Running Q2 with K=100, numBlock=1, numThread=1
+Number of Elements: 100
+Time Elapsed (GPU): 5.79799 secs
+Max error: 1
+Running Q2 with K=1, numBlock=1, numThread=256
+Number of Elements: 1
+Time Elapsed (GPU): 0.00125813 secs
+Max error: 1
+Running Q2 with K=5, numBlock=1, numThread=256
+Number of Elements: 5
+Time Elapsed (GPU): 0.00621796 secs
+Max error: 1
+Running Q2 with K=10, numBlock=1, numThread=256
+Number of Elements: 10
+Time Elapsed (GPU): 0.0125179 secs
+Max error: 1
+Running Q2 with K=50, numBlock=1, numThread=256
+Number of Elements: 50
+Time Elapsed (GPU): 0.0621629 secs
+Max error: 1
+Running Q2 with K=100, numBlock=1, numThread=256
+Number of Elements: 100
+Time Elapsed (GPU): 0.124147 secs
+Max error: 1
+Running Q2 with K=1, numBlock=-1, numThread=256
+Number of Elements: 1
+Time Elapsed (GPU): 2.88486e-05 secs
+Max error: 1
+Running Q2 with K=5, numBlock=-1, numThread=256
+Number of Elements: 5
+Time Elapsed (GPU): 0.000124216 secs
+Max error: 1
+Running Q2 with K=10, numBlock=-1, numThread=256
+Number of Elements: 10
+Time Elapsed (GPU): 0.000242949 secs
+Max error: 1
+Running Q2 with K=50, numBlock=-1, numThread=256
+Number of Elements: 50
+Time Elapsed (GPU): 0.00118899 secs
+Max error: 1
+Running Q2 with K=100, numBlock=-1, numThread=256
+Number of Elements: 100
+Time Elapsed (GPU): 0.00233603 secs
+Max error: 1
+Running Q3 with K=1, numBlock=1, numThread=1
+Number of Elements: 1
+Time Elapsed (GPU): 0.0739801 secs
+Max error: 1
+Running Q3 with K=5, numBlock=1, numThread=1
+Number of Elements: 5
+Time Elapsed (GPU): 0.289798 secs
+Max error: 1
+Running Q3 with K=10, numBlock=1, numThread=1
+Number of Elements: 10
+Time Elapsed (GPU): 0.579805 secs
+Max error: 1
+Running Q3 with K=50, numBlock=1, numThread=1
+Number of Elements: 50
+Time Elapsed (GPU): 2.89889 secs
+Max error: 1
+Running Q3 with K=100, numBlock=1, numThread=1
+Number of Elements: 100
+Time Elapsed (GPU): 5.79769 secs
+Max error: 1
+Running Q3 with K=1, numBlock=1, numThread=256
+Number of Elements: 1
+Time Elapsed (GPU): 0.00125504 secs
+Max error: 1
+Running Q3 with K=5, numBlock=1, numThread=256
+Number of Elements: 5
+Time Elapsed (GPU): 0.00622296 secs
+Max error: 1
+Running Q3 with K=10, numBlock=1, numThread=256
+Number of Elements: 10
+Time Elapsed (GPU): 0.012517 secs
+Max error: 1
+Running Q3 with K=50, numBlock=1, numThread=256
+Number of Elements: 50
+Time Elapsed (GPU): 0.0620739 secs
+Max error: 1
+Running Q3 with K=100, numBlock=1, numThread=256
+Number of Elements: 100
+Time Elapsed (GPU): 0.124149 secs
+Max error: 1
+Running Q3 with K=1, numBlock=-1, numThread=256
+Number of Elements: 1
+Time Elapsed (GPU): 3.19481e-05 secs
+Max error: 1
+Running Q3 with K=5, numBlock=-1, numThread=256
+Number of Elements: 5
+Time Elapsed (GPU): 0.000128984 secs
+Max error: 1
+Running Q3 with K=10, numBlock=-1, numThread=256
+Number of Elements: 10
+Time Elapsed (GPU): 0.000249147 secs
+Max error: 1
+Running Q3 with K=50, numBlock=-1, numThread=256
+Number of Elements: 50
+Time Elapsed (GPU): 0.00119495 secs
+Max error: 1
+Running Q3 with K=100, numBlock=-1, numThread=256
+Number of Elements: 100
+Time Elapsed (GPU): 0.00234222 secs
+Max error: 1

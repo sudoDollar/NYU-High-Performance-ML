@@ -1,0 +1,7 @@
+rm -f c1c2 c3
+/share/apps/cuda/11.3.1/bin/nvcc c1c2.cu -o c1c2 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 -L/share/apps/cudnn/8.6.0.163-cuda11/lib -O3 
+/share/apps/cuda/11.3.1/bin/nvcc c3.cu -lcudnn -o c3 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 -L/share/apps/cudnn/8.6.0.163-cuda11/lib -I /share/apps/cudnn/8.6.0.163-cuda11/include -O3 
+122756344698240.000000,10.764
+122756344698240.000000,14.192
+122756344698240.000000,0.086
+

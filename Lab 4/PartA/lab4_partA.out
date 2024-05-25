@@ -1,0 +1,84 @@
+rm -f vecadd00 vecadd01 matmult00 matmult01 *.o
+/share/apps/cuda/11.3.1/bin/nvcc vecaddKernel00.cu -c -o vecaddKernel00.o -O3 
+/share/apps/cuda/11.3.1/bin/nvcc timer.cu -c -o timer.o -O3 
+/share/apps/cuda/11.3.1/bin/nvcc vecadd.cu vecaddKernel00.o -o vecadd00 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 timer.o -O3 
+vecadd.cu: In function ‘void Cleanup(bool)’:
+vecadd.cu:160:24: warning: ‘cudaError_t cudaThreadExit()’ is deprecated [-Wdeprecated-declarations]
+  160 |     error = cudaThreadExit();
+      |                        ^
+/share/apps/cuda/11.3.1/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1020:46: note: declared here
+ 1020 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadExit(void);
+      |                                              ^~~~~~~~~~~~~~
+/share/apps/cuda/11.3.1/bin/nvcc vecaddKernel01.cu -c -o vecaddKernel01.o -O3 
+/share/apps/cuda/11.3.1/bin/nvcc vecadd.cu vecaddKernel01.o -o vecadd01 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 timer.o -O3 
+vecadd.cu: In function ‘void Cleanup(bool)’:
+vecadd.cu:160:24: warning: ‘cudaError_t cudaThreadExit()’ is deprecated [-Wdeprecated-declarations]
+  160 |     error = cudaThreadExit();
+      |                        ^
+/share/apps/cuda/11.3.1/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1020:46: note: declared here
+ 1020 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadExit(void);
+      |                                              ^~~~~~~~~~~~~~
+/share/apps/cuda/11.3.1/bin/nvcc matmultKernel00.cu -c -o matmultKernel00.o -O3 
+/share/apps/cuda/11.3.1/bin/nvcc matmult.cu matmultKernel00.o -o matmult00 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 timer.o -O3 
+/share/apps/cuda/11.3.1/bin/nvcc matmultKernel01.cu -c -o matmultKernel01.o -O3  -DFOOTPRINT_SIZE=32
+/share/apps/cuda/11.3.1/bin/nvcc matmult.cu matmultKernel01.o -o matmult01 -L/share/apps/cuda/11.3.1/lib64 -L/share/apps/cuda/11.3.1/samples/common/lib/linux/x86_64 timer.o -O3  -DFOOTPRINT_SIZE=32
+Running vecadd00 with number of values per thread=500
+Total vector size: 3840000
+Time: 0.000372 (sec), GFlopsS: 10.324441, GBytesS: 123.893287
+Test PASSED 
+Running vecadd00 with number of values per thread=1000
+Total vector size: 7680000
+Time: 0.000729 (sec), GFlopsS: 10.533765, GBytesS: 126.405185
+Test PASSED 
+Running vecadd00 with number of values per thread=2000
+Total vector size: 15360000
+Time: 0.001468 (sec), GFlopsS: 10.463620, GBytesS: 125.563442
+Test PASSED 
+Running vecadd01 with number of values per thread=500
+Total vector size: 3840000
+Time: 0.000254 (sec), GFlopsS: 15.108937, GBytesS: 181.307250
+Test PASSED 
+Running vecadd01 with number of values per thread=1000
+Total vector size: 7680000
+Time: 0.000503 (sec), GFlopsS: 15.266471, GBytesS: 183.197657
+Test PASSED 
+Running vecadd01 with number of values per thread=2000
+Total vector size: 15360000
+Time: 0.001001 (sec), GFlopsS: 15.346477, GBytesS: 184.157721
+Test PASSED 
+Running matmult00 with number of values per thread=256
+Data dimensions: 4096x4096 
+Grid Dimensions: 256x256 
+Block Dimensions: 16x16 
+Footprint Dimensions: 16x16 
+Time: 0.094794 (sec), nFlops: 137438953472, GFlopsS: 1449.869219
+Running matmult00 with number of values per thread=512
+Data dimensions: 8192x8192 
+Grid Dimensions: 512x512 
+Block Dimensions: 16x16 
+Footprint Dimensions: 16x16 
+Time: 0.689928 (sec), nFlops: 1099511627776, GFlopsS: 1593.661281
+Running matmult00 with number of values per thread=1024
+Data dimensions: 16384x16384 
+Grid Dimensions: 1024x1024 
+Block Dimensions: 16x16 
+Footprint Dimensions: 16x16 
+Time: 5.583812 (sec), nFlops: 8796093022208, GFlopsS: 1575.284595
+Running matmult01 with number of values per thread=256
+Data dimensions: 8192x8192 
+Grid Dimensions: 256x256 
+Block Dimensions: 16x16 
+Footprint Dimensions: 32x32 
+Time: 0.304622 (sec), nFlops: 1099511627776, GFlopsS: 3609.430254
+Running matmult01 with number of values per thread=512
+Data dimensions: 16384x16384 
+Grid Dimensions: 512x512 
+Block Dimensions: 16x16 
+Footprint Dimensions: 32x32 
+Time: 2.430987 (sec), nFlops: 8796093022208, GFlopsS: 3618.321880
+Running matmult01 with number of values per thread=1024
+Data dimensions: 32768x32768 
+Grid Dimensions: 1024x1024 
+Block Dimensions: 16x16 
+Footprint Dimensions: 32x32 
+Time: 19.492514 (sec), nFlops: 70368744177664, GFlopsS: 3610.039452
